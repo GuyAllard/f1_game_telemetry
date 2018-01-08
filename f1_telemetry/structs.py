@@ -132,8 +132,6 @@ class UDPPacket(ctypes.LittleEndianStructure):
         ('ang_acc_z',              ctypes.c_float),      # NEW (v1.8) angular acceleration z-component
     ]
 
-assert ctypes.sizeof(UDPPacket) == 1289
-
 # lookups for tracks, teams and drivers
 Tracks = {
     0:  'Melbourne',
