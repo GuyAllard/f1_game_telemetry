@@ -1,6 +1,8 @@
+# coding: utf-8
 """
 UDP telemetry packet structures
 """
+
 import ctypes
 
 class CarUDPData(ctypes.LittleEndianStructure):
