@@ -133,3 +133,110 @@ class UDPPacket(ctypes.LittleEndianStructure):
     ]
 
 assert ctypes.sizeof(UDPPacket) == 1289
+
+# lookups for tracks, teams and drivers
+Tracks = {
+    0:  'Melbourne',
+    1:  'Sepang',
+    2:  'Shanghai',
+    3:  'Sakhir (Bahrain)',
+    4:  'Catalunya',
+    5:  'Monaco',
+    6:  'Montreal',
+    7:  'Silverstone',
+    8:  'Hockenheim',
+    9:  'Hungaroring',
+    10: 'Spa',
+    11: 'Monza',
+    12: 'Singapore',
+    13: 'Suzuka',
+    14: 'Abu Dhabi',
+    15: 'Texas',
+    16: 'Brazil',
+    17: 'Austria',
+    18: 'Sochi',
+    19: 'Mexico',
+    20: 'Baku (Azerbaijan)',
+    21: 'Sakhir Short',
+    22: 'Silverstone Short',
+    23: 'Texas Short',
+    24: 'Suzuka Short'
+}
+
+Teams = {
+    4:  'Mercedes',
+    0:  'Redbull',
+    1:  'Ferrari',
+    6:  'Force India',
+    7:  'Williams',
+    2:  'McLaren',
+    8:  'Toro Rosso',
+    11: 'Haas',
+    3:  'Renault',
+    5:  'Sauber',
+}
+
+ClassicTeams = {
+    0:  'Williams 1992',
+    1:  'McLaren 1988',
+    2:  'McLaren 2008',
+    3:  'Ferrari 2004',
+    4:  'Ferrari 1995',
+    5:  'Ferrari 2007',
+    6:  'McLaren 1998',
+    7:  'Williams 1996',
+    8:  'Renault 2006',
+    10: 'Ferrari 2002',
+    11: 'Redbull 2010',
+    12: 'McLaren 1991'
+}
+
+Drivers = {
+    9:  'Lewis Hamilton',
+    15: 'Valtteri Bottas',
+    16: 'Daniel Ricciardo',
+    22: 'Max Verstappen',
+    0:  'Sebastian Vettel',
+    6:  'Kimi Räikkönen',
+    5:  'Sergio Perez',
+    33: 'Esteban Ocon',
+    3:  'Felipe Massa',
+    35: 'Lance Stroll',
+    2:  'Fernando Alonso',
+    34: 'Stoffel Vandoorne',
+    23: 'Carlos Sainz Jr.',
+    1:  'Daniil Kvyat',
+    7:  'Romain Grosjean',
+    14: 'Kevin Magnussen',
+    10: 'Nico Hulkenberg',
+    20: 'Jolyon Palmer',
+    18: 'Marcus Ericsson',
+    31: 'Pascal Wehrlein'
+}
+
+ClassicDrivers = {
+    23: 'Arron Barnes',
+    1:  'Martin Giles',
+    16: 'Alex Murray',
+    68: 'Lucas Roth',
+    2:  'Igor Correia',
+    3:  'Sophie Levasseur',
+    24: 'Jonas Schiffer',
+    4:  'Alain Forest',
+    20: 'Jay Letourneau',
+    6:  'Esto Saari',
+    9:  'Yasar Atiyeh',
+    18: 'Callisto Calabresi',
+    22: 'Naota Izum',
+    10: 'Howard Clarke',
+    8:  'Lars Kaufmann',
+    14: 'Marie Laursen',
+    31: 'Flavio Nieves',
+    7:  'Peter Belousov',
+    0:  'Klimek Michalski',
+    5:  'Santiago Moreno',
+    15: 'Benjamin Coppens',
+    32: 'Noah Visser',
+    33: 'Gert Waldmuller',
+    34: 'Julian Quesada'
+}
