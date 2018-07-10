@@ -2,7 +2,23 @@ from __future__ import print_function
 import socket
 from structs import UDPPacket
 import ctypes
+"""
+Basic interface for retrieving UDP telemetry packets.
 
+The get_telemetry generator function can be used to obtain the decoded UDP packets 
+from a specified IP address and port.
+
+Example
+To monitor the gear for the human player driver, with the game configured to send
+packets using an IP address of 192.168.1.150 and port 20777:
+>>> for packet in get_telemetry('192.168.1.150', 20777):
+>>>     print(int(packet.gear) - 1)
+
+If you have configured the game to use broadcast mode, use an empty string for the 
+IP address:
+>>> for packet in get_telemetry('', 20777):
+>>>     print(int(packet.gear) - 1)
+"""
 
 def get_packet(address, port):
     """
